@@ -16,7 +16,7 @@
 * Backend uses expressjs for the server
 * The express view engine used is [liquid](https://github.com/harttle/liquidjs/wiki/Use-with-Expressjs)
 * Using [nodemon](https://github.com/remy/nodemon/) for reloading the server on backend changes
-* Using [instant](https://github.com/fgnass/instant) reloading the web page on frontend changes
+* Using [instant](https://github.com/fgnass/instant) for reloading the web page on frontend changes
 * Using [minify](https://github.com/tdewolff/minify/tree/master/cmd/minify) to minify our js and css for production
   * Note: dont use minify on the html as it seems break the html (the server gzip should be enough for the html anyway)
   * Snowpack minifies the vendor js when we build for production
