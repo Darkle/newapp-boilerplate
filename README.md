@@ -21,7 +21,7 @@
   * Note: dont use minify on the html as it seems break the html (the server gzip should be enough for the html anyway)
   * Snowpack minifies the vendor js when we build for production
 * Using [jest](https://jestjs.io/) for tests
-* The `run-s` in the package.json script is just a shortcut for the `npm-run-all` program. It runs the script in serial (one after the other).
+* The `run-s` in the package.json script is just a shortcut for the `npm-run-all` program. It runs the scripts in serial (one after the other).
 * The `browserslist` key in the package.json is for snowpack. It tells it what to target for its output.
 * The `size-check` npm script runs the [bundlesize](https://github.com/siddharthkp/bundlesize) app. It runs agains the snowpack output files. It doesnt check the aggregate, only the individual files.
 
