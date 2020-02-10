@@ -9,7 +9,7 @@
 
 ###### Compromises:
 * We forgo cache busting via hashing for our own js. Although it is possible to still do it on the server via the [ETag](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag)
-  * Note: you are still able to cache bust the [vendor scripts with snowpack](https://www.snowpack.dev/#automatic-cache-busting-via-import-url)
+  * Note: you are still able to cache bust the vendor scripts locally if you want with [snowpack](https://www.snowpack.dev/#automatic-cache-busting-via-import-url)
 * We forgo tree shaking for our own code that we write, however snowpack does [tree shaking for the vendor files](https://www.snowpack.dev/#production-optimization)
 
 ###### Setup details:
