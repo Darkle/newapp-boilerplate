@@ -19,7 +19,7 @@
 * Using [instant](https://github.com/fgnass/instant) reloading the web page on frontend changes
 * Using [minify](https://github.com/tdewolff/minify/tree/master/cmd/minify) to minify our js and css for production
   * Note: dont use minify on the html as it seems break the html (the server gzip should be enough for the html anyway)
-  * Snowpack minifies the vendor js
+  * Snowpack minifies the vendor js when we build for production
 * Using [jest](https://jestjs.io/) for tests
 * The `run-s` in the package.json script is just a shortcut for the `npm-run-all` program. It runs the script in serial (one after the other).
 * The `browserslist` key in the package.json is for snowpack. It tells it what to target for its output.
