@@ -15,8 +15,8 @@
 ###### Setup details:
 * Backend uses expressjs for the server
 * The express view engine used is [liquid](https://github.com/harttle/liquidjs/wiki/Use-with-Expressjs)
-* Using nodemon for the server reload on change
-* Using [instant](https://github.com/fgnass/instant) for frontend reload web page on change
+* Using [nodemon](https://github.com/remy/nodemon/) for reloading the server on backend changes
+* Using [instant](https://github.com/fgnass/instant) reloading the web page on frontend changes
 * Using [minify](https://github.com/tdewolff/minify/tree/master/cmd/minify) to minify our js and css
   * Note: dont use minify on the html as it seems break the html (the server gzip should be enough for the html anyway)
 * Using [jest](https://jestjs.io/) for tests
