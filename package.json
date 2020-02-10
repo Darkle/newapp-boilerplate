@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "NODE_ENV=production node backend/index.js",
-    "dev": "nodemon --watch backend backend/index.js",
     "prepare": "snowpack --include \"frontend/**/*.js\" --dest frontend/js/web_modules",
+    "dev": "nodemon --watch backend backend/index.js",
     "build": "run-s lint test minify-** size-check",
     "lint": "eslint frontend/**/*.js backend/**/*.js",
     "minify-vendor-js": "snowpack --include \"frontend/**/*.js\" --optimize --clean --dest frontend/js/web_modules",
