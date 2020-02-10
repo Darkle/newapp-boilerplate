@@ -4,8 +4,8 @@
 ###### Goals:
 * No bundler
 * Simple/Minimal
-* Live reload on frontend change for frontend
-* Server reload on change for backend
+* Reload webpage for frontend change
+* Reload server for backend change
 
 ###### Compromises:
 * We forgo cache busting via hashing for our own js. Although it is possible to still do it on the server via the [ETag](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag)
