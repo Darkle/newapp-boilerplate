@@ -9,10 +9,10 @@
     "dev": "nodemon --watch backend backend/index.js",
     "build": "run-s lint test minify-** size-check",
     "lint": "eslint frontend/**/*.js backend/**/*.js",
+    "test": "jest",
     "minify-vendor-js": "snowpack --include \"frontend/**/*.js\" --optimize --clean --dest frontend/js/web_modules",
     "minify-frontend-js-css": "minify --recursive --output frontend frontend --match=\\.js --match=\\.css",
-    "size-check": "bundlesize -f \"frontend/js/web_modules/*.js\" -s 20kB",
-    "test": "jest"
+    "size-check": "bundlesize -f \"frontend/js/web_modules/*.js\" -s 20kB"
   },
   "dependencies": {
     "express": "^4.17.1",
