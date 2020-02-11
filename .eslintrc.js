@@ -9,7 +9,8 @@ module.exports = {
     }
   },
   extends: [
-    'eslint:recommended'
+    'eslint:recommended',
+    'plugin:react/all'
   ],
   globals: {
 
@@ -21,7 +22,14 @@ module.exports = {
     webextensions: true,
     greasemonkey: true,
   },
+  settings: {
+    react: {
+      pragma: "h"
+    }
+  },
   plugins: [
+    "react",
+    "react-hooks"
   ],
   rules: {
     'array-callback-return': 'error',
@@ -133,10 +141,24 @@ module.exports = {
       }
     ],
     'radix': 'error',
+    'react/jsx-filename-extension': [1, { 'extensions': ['.js', '.jsx', '.lsc', '.lsx'] }],
+    'react/jsx-indent': "off",
+    'react/jsx-no-literals': "off",
+    'react/jsx-one-expression-per-line': "off",
+    'react/jsx-curly-newline': "off",
+    'react/jsx-indent-props': "off",
+    'react/jsx-sort-props': "off",
+    'react/jsx-max-props-per-line': [1, { "maximum": 2 }],
+    'react/jsx-max-depth': [1, { "max": 4 }],
+    'react/jsx-no-bind': [1, { "allowArrowFunctions": true, 'allowFunctions': true }],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/no-did-update-set-state": "error",
+    "react/no-unknown-property": "off",
     'require-atomic-updates': 'error',
-    'require-await': 'error',
     'require-unicode-regexp': 'error',
     'rest-spread-spacing': ['error', 'never'],
+    'require-await': 'error',
     'semi': [
       'error',
       'never',
