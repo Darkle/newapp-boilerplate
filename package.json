@@ -15,7 +15,7 @@
     "size-check": "bundlesize -f \"frontend/**/*.js\" -s 20kB"
   },
   "dependencies": {
-    "causalityjs": "^2.1.2",
+    "causalityjs": "^2.1.1",
     "express": "^4.17.1",
     "instant": "^1.11.0",
     "internal-ip": "^5.0.0",
