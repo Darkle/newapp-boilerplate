@@ -65,6 +65,7 @@ module.exports = {
         ignoreArrayIndexes: true,
         enforceConst: true,
         detectObjects: true,
+        ignore: [0, 1]
       }
     ],
     'no-multiple-empty-lines': [

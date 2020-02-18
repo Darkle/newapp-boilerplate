@@ -20,3 +20,15 @@ app.use(instant(frontendDir))
 
 app.get('/', (req, res) => res.render('index'))
 app.listen(port, ipv4address, () => console.log(`Server listening on http://${ipv4address}:${port}`))
+
+process.on('multipleResolves', (type, promise, reason) => {
+  console.error(type, promise, reason)
+})
+process.on('uncaughtException', (err, origin) => {
+  console.error(err, origin)
+  process.exit(1)
+})
+process.on('unhandledRejection', (reason, promise) => {
+  console.error('Unhandled Rejection at:', promise, 'reason:', reason)
+  process.exit(1)
+})
