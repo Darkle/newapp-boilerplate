@@ -22,8 +22,7 @@
   * expressjs for the server
   * The express view engine used is [liquid](https://github.com/harttle/liquidjs/wiki/Use-with-Expressjs)
 * Frontend:
-  * [lit-html](https://lit-html.polymer-project.org/) for components
-  * [causalityjs](https://github.com/erobwen/causality) for state
+  * [hyperapp](https://github.com/jorgebucaran/hyperapp/tree/V1) version 1 for components and state
 * Using [nodemon](https://github.com/remy/nodemon/) for reloading the server on backend changes
 * Using [instant](https://github.com/fgnass/instant) for reloading the web page on frontend changes
 * Using [Snowpack](https://www.snowpack.dev/) for the frontend es6 npm modules
