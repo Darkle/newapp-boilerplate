@@ -1,23 +1,25 @@
-import htm from './web_modules/htm.js'
-import { h, app } from './web_modules/hyperapp.js'
+import { observable, html } from './web_modules/sinuous.js'
 
-const html = htm.bind(h)
+const oneSecondInMS = 1000
+const seconds = observable(0)
+const Timer = props => {
+  // Create an obervable with number `0`.
 
-const appState = {
-  count: 0
+  function tick() {
+    // Get the current value and increment the value with 1.
+    seconds(seconds() + 1)
+  }
+  setInterval(tick, oneSecondInMS)
+
+  // Creates the view of this component.
+  return html`
+    <div>${props.unit}: ${seconds}</div>
+  `
 }
 
-const appActions = {
-  down: value => state => ({ count: state.count - value }),
-  up: value => state => ({ count: state.count + value })
-}
-
-const view = (state, actions) => (
-  html`<div>
-    <h1>${state.count}</h1>
-    <button onclick=${() => actions.down(1)}>-</button>
-    <button onclick=${() => actions.up(1)}>+</button>
-  </div>`
+document.querySelector('#app').append(
+  // Use the component and pass some props.
+  html`
+    <${Timer} unit="Seconds" />
+  `
 )
-
-app(appState, appActions, view, document.querySelector('#app'))

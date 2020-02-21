@@ -16,11 +16,10 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "htm": "^3.0.3",
-    "hyperapp": "^1.2.10",
     "instant": "^1.11.0",
     "internal-ip": "^5.0.0",
-    "liquidjs": "^9.7.0"
+    "liquidjs": "^9.7.0",
+    "sinuous": "^0.24.2"
   },
   "devDependencies": {
     "bundlesize": "^0.18.0",
