@@ -22,7 +22,7 @@
   * expressjs for the server
   * The express view engine used is [liquid](https://github.com/harttle/liquidjs/wiki/Use-with-Expressjs)
 * Frontend:
-  * [sinuous](https://sinuous.netlify.com/) for components and state
+  * [Reef](https://github.com/cferdinandi/reef) for components and state
 * Using [nodemon](https://github.com/remy/nodemon/) for reloading the server on backend changes
 * Using [instant](https://github.com/fgnass/instant) for reloading the web page on frontend changes
 * Using [Snowpack](https://www.snowpack.dev/) for the frontend es6 npm modules
